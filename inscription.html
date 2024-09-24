@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Début du Navbar -->
+    <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/OIP (1).jpeg" alt="DKD Logo" style="height: 40px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inscription</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="connexion.html">Connexion</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Rechercher</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!-- Fin du Navbar -->
+
+    <!-- Début du formulaire d'inscription -->
+    <div class="signup-container">
+        <h2>Inscription</h2>
+        <form>
+            <!-- Champ Nom -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Nom Complet</label>
+                <input type="text" class="form-control" id="name" placeholder="Entrez votre nom">
+            </div>
+
+            <!-- Champ Email -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Adresse Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
+            </div>
+
+            <!-- Champ Mot de Passe -->
+            <div class="mb-3">
+                <label for="password" class="form-label">Mot de Passe</label>
+                <input type="password" class="form-control" id="password" placeholder="Entrez votre mot de passe">
+            </div>
+
+            <!-- Champ Confirmation Mot de Passe -->
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirmer le Mot de Passe</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirmez votre mot de passe">
+            </div>
+
+            <!-- Bouton Inscription -->
+            <button type="submit" class="btn btn-signup">S'inscrire</button>
+
+            <!-- Liens Connexion -->
+            <div class="links">
+                <p>Vous avez déjà un compte ? <a href="#">Connectez-vous</a></p>
+            </div>
+        </form>
+    </div>
+    <!-- Fin du formulaire d'inscription -->
+
+</body>
+</html>
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+    .signup-container {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        margin: 100px auto;
+    }
+    .signup-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #198754;
+    }
+    .form-control {
+        margin-bottom: 20px;
+    }
+    .btn-signup {
+        width: 100%;
+        background-color: #198754;
+        border: none;
+        color: white;
+    }
+    .btn-signup:hover {
+        background-color: #157347;
+    }
+    .links {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .links a {
+        color: #198754;
+        text-decoration: none;
+    }
+    .links a:hover {
+        text-decoration: underline;
+    }
+</style>
